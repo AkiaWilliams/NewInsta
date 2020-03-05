@@ -7,6 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <link rel="stylesheet" type="text/css" href="index.css" />
 
     <!-- Bootstrap CSS -->
     <link
@@ -15,21 +16,68 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-
-    <title>Hello, world!</title>
   </head>
+
   <body>
     <nav class="navbar navbar-light bg-light">
-
       <i class="fab fa-instagram"></i>
       <a class="navbar-brand" href="#!">Instagram </a>
       <!-- <ul class="nav navbar-nav navbar-right"></ul> -->
       <div class="container"></div>
 
-      <button type="button" class="btn btn-success navbar-right">
+      <button
+        type="button"
+        class="btn btn-success navbar-right"
+        class="btn btn-primary"
+        data-toggle="modal"
+        data-target="#exampleModal"
+      >
         Create new post
-        <div></div>
       </button>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <i class=" fas fa-camera"></i>
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Cancel
+              </button>
+              <button type="button" class="btn btn-primary">Publish</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="dropdown">
         <button
@@ -42,17 +90,29 @@
         >
           <i class="fas fa-cog"></i>
         </button>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+        <div
+          class="dropdown-menu dropdown-menu-right"
+          aria-labelledby="dropdownMenuButton"
+        >
           <a class="dropdown-item" href="#">Action</a>
           <a class="dropdown-item" href="#">Another action</a>
           <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#">Log Out</a>
         </div>
       </div>
     </nav>
 
-    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+    <ul
+      class="nav nav-pills mb-3 justify-content-center"
+      id="pills-tab"
+      role="tablist"
+    >
       <li class="nav-item">
-        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+        <a
+          class="nav-link active"
+          id="pills-home-tab"
+          data-toggle="pill"
+          href="#pills-home"
           role="tab"
           aria-controls="pills-home"
           aria-selected="true"
@@ -68,96 +128,433 @@
           role="tab"
           aria-controls="pills-profile"
           aria-selected="false"
-          ><i class="fas fa-square"></i
-        ></a>
-      </li>
+          ><i class="fas fa-square"></i>
+        </a>
       </li>
     </ul>
 
-  <div class="tab-content" id="pills-tabContent">
-    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-        <div class="row">
-            <div class="col-12 col-md-4 col-sm-4 p-0">
-             <img src="https://www.telegraph.co.uk/content/dam/Travel/2019/June/hawaii-iStock-937940104.jpg?imwidth=450" height="340px" width="450px"></img>
-            </div>
-            <div class="col-12 col-md-4 col-sm-4 p-0">
-              <img src="https://www.telegraph.co.uk/content/dam/Travel/2019/June/hawaii-iStock-937940104.jpg?imwidth=450" height="340px" width="450px">
-            </div>
-            <div class="col-12 col-md-4 col-sm-4 p-0">
-              <img src="https://www.telegraph.co.uk/content/dam/Travel/2019/June/hawaii-iStock-937940104.jpg?imwidth=450"  height="340px" width="450px"></img>
-            </div>
-          </div>
-        
-
-        <div class="row">
-          <div class="col-12 col-md-4 col-sm-4 p-0">
-           <img src="https://www.telegraph.co.uk/content/dam/Travel/2019/June/hawaii-iStock-937940104.jpg?imwidth=450" height="340px" width="450px">
-          </div>
-          <div class="col-12 col-md-4 col-sm-4 p-0">
-            <img src="https://www.telegraph.co.uk/content/dam/Travel/2019/June/hawaii-iStock-937940104.jpg?imwidth=450" height="340px" width="450px">
-          </div>
-          <div class="col-12 col-md-4 col-sm-4 p-0">
-            <img src="https://www.telegraph.co.uk/content/dam/Travel/2019/June/hawaii-iStock-937940104.jpg?imwidth=450" height="340px" width="450px">
-          </div>
+    <div class="tab-content" id="pills-tabContent">
+      <div
+        class="tab-pane fade show active"
+        id="pills-home"
+        role="tabpanel"
+        aria-labelledby="pills-home-tab"
+      ></div>
+      <div class="row">
+        <div class="col-12 col-md-4 col-sm-4 p-0">
+          <img
+            src="https://i.insider.com/5c1c90f8e04d6243c7019cf6?width=1100&format=jpeg&auto=webp"
+            height="340px"
+            width="565px"
+          />
         </div>
-      
-
-        <div class="row">
-          <div class="col-12 col-md-4 col-sm-4 p-0">
-            <img src="https://www.telegraph.co.uk/content/dam/Travel/2019/June/hawaii-iStock-937940104.jpg?imwidth=450" height="340px" width="450px">
-          </div>
-          <div class="col-12 col-md-4 col-sm-4 p-0">
-            <img src="https://www.telegraph.co.uk/content/dam/Travel/2019/June/hawaii-iStock-937940104.jpg?imwidth=450" height="340px" width="450px">
-          </div>
-          <div class="col-12 col-md-4 col-sm-4 p-0">
-            <img src="https://www.telegraph.co.uk/content/dam/Travel/2019/June/hawaii-iStock-937940104.jpg?imwidth=450" height="340px" width="450px">
-          </div>
+        <div class="col-12 col-md-4 col-sm-4 p-0">
+          <img
+            src="https://www.hawaiimagazine.com/sites/default/files/sites/default/files/Hawaiian-food-ThinkstockPhotos-488006550.jpg"
+            height="345px"
+            width="565px"
+          />
         </div>
-    </div>
-
-    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-      Post Gallery
-      <div class="container">
-        <div class="row ">
-          <img class="col-12 col-md-8">
-            <img src="https://www.telegraph.co.uk/content/dam/Travel/2019/June/hawaii-iStock-937940104.jpg?imwidth=450" height="200px" style="widows: 100px"></img>
-          </div>
-          <div class="col-12 col-md-8">
-            <img src="https://www.telegraph.co.uk/content/dam/Travel/2019/June/hawaii-iStock-937940104.jpg?imwidth=450" height="340px" style="widows: 100px"></img>
-          </div>
-          <div class="col-12 col-md-8">
-              <img src="https://www.telegraph.co.uk/content/dam/Travel/2019/June/hawaii-iStock-937940104.jpg?imwidth=450" height="340px" style="width:100px;"></img>
-          </div>
-          
-          
-          <div class="row ">
-            <img class="col-6 col-md-4">
-              <img src="https://www.telegraph.co.uk/content/dam/Travel/2019/June/hawaii-iStock-937940104.jpg?imwidth=450" height="340px" style="width:100px"></img>
-            </div>
-            <div class="col-6 col-md-4">
-              <img src="https://www.telegraph.co.uk/content/dam/Travel/2019/June/hawaii-iStock-937940104.jpg?imwidth=450" height="340px" style="width:100px"></img>
-            </div>
-            <div class="col-6 col-md-4">
-                <img src="https://www.telegraph.co.uk/content/dam/Travel/2019/June/hawaii-iStock-937940104.jpg?imwidth=450" height="340px" style="widows: 100px"></img>
-            </div>
-            
-            
-            <div class="row ">
-              <img class="col-6 col-md-4">
-                <img src="https://www.telegraph.co.uk/content/dam/Travel/2019/June/hawaii-iStock-937940104.jpg?imwidth=450" height="340px" style="width:100px"></img>
-              </div>
-              <div class="col-6 col-md-4">
-                <img src="https://www.telegraph.co.uk/content/dam/Travel/2019/June/hawaii-iStock-937940104.jpg?imwidth=450" height="340px" style="widows: 100px"></img>
-              </div>
-              <div class="col-6 col-md-4">
-                  <img src="https://www.telegraph.co.uk/content/dam/Travel/2019/June/hawaii-iStock-937940104.jpg?imwidth=450" height="340px" style="width:100px"></img>
-              </div>
-          
+        <div class="col-12 col-md-4 col-sm-4 p-0">
+          <img
+            src="https://cmsassets.mybluprint.com/dims4/default/d2e52e8/2147483647/strip/true/crop/3276x3276+0+0/resize/1200x1200!/quality/90/?url=https%3A%2F%2Fcmsassets.mybluprint.com%2F6d%2Fd8%2F1c5c15794926a3a576de8396a349%2Fimg-1380.jpeg"
+            height="340px"
+            width="565px"
+          />
         </div>
       </div>
+      <div class="row">
+        <div class="col-12 col-md-4 col-sm-4 p-0">
+          <img
+            src="https://www.discoverlosangeles.com/sites/default/files/styles/hero/public/images/2019-01/Hermosa%20Beach%20Pier%20sunset.jpg?itok=9x82CPJg"
+            height="340px"
+            width="565px"
+          />
+        </div>
+        <div class="col-12 col-md-4 col-sm-4 p-0">
+          <img
+            src="https://www.hawaiimagazine.com/sites/default/files/field/image/shepardfairey.jpg"
+            height="345px"
+            width="565px"
+          />
+        </div>
+        <div class="col-12 col-md-4 col-sm-4 p-0">
+          <img
+            src="https://www.scarlettentertainment.com/sites/default/files/Hawaiian-Article-Luau-.jpg"
+            height="340px"
+            width="565px"
+          />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-md-4 col-sm-4 p-0">
+          <img
+            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExMjU4fQ&w=1000&q=80"
+            height="340px"
+            width="565px"
+          />
+        </div>
+        <div class="col-12 col-md-4 col-sm-4 p-0">
+          <img
+            src="https://i.pinimg.com/originals/49/35/11/4935113c9f48e845f1c72fc43629c2d7.jpg"
+            height="340px"
+            width="565px"
+          />
+        </div>
+        <div class="col-12 col-md-4 col-sm-4 p-0">
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/5ccabcf60b77bdbb3acaf70a/1567942055419-KQKDFQNMZGR1CS1G56UX/ke17ZwdGBToddI8pDm48kFTEgwhRQcX9r3XtU0e50sUUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcW7uEhC96WQdj-SwE5EpM0lAopPba9ZX3O0oeNTVSRxdHAmtcci_6bmVLoSDQq_pb/AAAABRc2jGhO1nPuf_HcX2s595-qmX6dvzzkvJ9WV62pZFhQWvkpEOOFpqbUPlpJ_ge86JKRoalSy9kxXEgRBVugJJluitv4aUnFmA.jpg"
+            height="340px"
+            width="565px"
+          />
+        </div>
       </div>
     </div>
-    
+
+    <div
+      class="tab-pane fade"
+      id="pills-profile"
+      role="tabpanel"
+      aria-labelledby="pills-profile-tab"
+    >
+      <!-- first blog picture -->
+      <div class="container bg-light rounded ">
+        <div class="col p-0">
+          <div class="row title-box">
+            <div class="title-box-left">
+              <h2>My First Photo</h2>
+            </div>
+            <div class="title-box-right bg-light">
+              <h5 class="text-right ">2/24</h5>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://i.insider.com/5c1c90f8e04d6243c7019cf6?width=1100&format=jpeg&auto=webp"
+              class="img-fluid"
+              alt="Responsive image"
+            />
+          </div>
+          <h5>45 likes</h5>
+          <p>
+            I always wanted to swim in the beautiful clear waters of hawaii!
+          </p>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <i class="far fa-heart"></i>
+              </div>
+              <div class=" comment col">
+                <h6>Comment...</h6>
+              </div>
+              <div class="object col">
+                <i class="fas fa-ellipsis-v "></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- first blog picture -->
+      <!-- Second blog picture -->
+      <div class="container bg-light rounded mt-3 ">
+        <div class="col p-0">
+          <div class="row title-box">
+            <div class="title-box-left">
+              <h2>My Second Photo</h2>
+            </div>
+            <div class="title-box-right bg-light">
+              <h5 class="text-right ">2/24</h5>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://www.hawaiimagazine.com/sites/default/files/sites/default/files/Hawaiian-food-ThinkstockPhotos-488006550.jpg"
+              class="img-fluid"
+              alt="Responsive image"
+            />
+          </div>
+          <h5>45 likes</h5>
+          <p>Great tasting hawaiian food! Love trying new things.</p>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <i class="far fa-heart"></i>
+              </div>
+              <div class=" comment col">
+                <h6>Comment...</h6>
+              </div>
+              <div class="object col">
+                <i class="fas fa-ellipsis-v "></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second blog picture -->
+      <!-- Third blog picture -->
+      <div class="container bg-light rounded  mt-3">
+        <div class="col p-0">
+          <div class="row title-box">
+            <div class="title-box-left">
+              <h2>My Third Photo</h2>
+            </div>
+            <div class="title-box-right bg-light ">
+              <h5 class="text-right ">2/24</h5>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://cmsassets.mybluprint.com/dims4/default/d2e52e8/2147483647/strip/true/crop/3276x3276+0+0/resize/1200x1200!/quality/90/?url=https%3A%2F%2Fcmsassets.mybluprint.com%2F6d%2Fd8%2F1c5c15794926a3a576de8396a349%2Fimg-1380.jpeg"
+              class="img-fluid"
+              alt="Responsive image"
+            />
+          </div>
+          <h5>22 likes</h5>
+          <p>
+            Celebrating different cultures! Bought a Dia de las muertos inspired
+            cake!
+          </p>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <i class="far fa-heart"></i>
+              </div>
+              <div class=" comment col">
+                <h6>Comment...</h6>
+              </div>
+              <div class="object col">
+                <i class="fas fa-ellipsis-v "></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Third blog picture -->
+      <!-- Fourth blog picture -->
+      <div class=" container bg-light rounded mt-3">
+        <div class="col p-0">
+          <div class="row title-box">
+            <div class="title-box-left">
+              <h2>My Fourth Photo</h2>
+            </div>
+            <div class="title-box-right bg-light">
+              <h5 class="text-right ">2/24</h5>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://www.discoverlosangeles.com/sites/default/files/styles/hero/public/images/2019-01/Hermosa%20Beach%20Pier%20sunset.jpg?itok=9x82CPJg"
+              class="img-fluid"
+              alt="Responsive image"
+            />
+          </div>
+          <h5>16 likes</h5>
+          <p>Basking in the sunset.</p>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <i class="far fa-heart"></i>
+              </div>
+              <div class=" comment col">
+                <h6>Comment...</h6>
+              </div>
+              <div class="object col">
+                <i class="fas fa-ellipsis-v "></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fourth blog picture -->
+      <!-- Fifth blog picture -->
+      <div class="container bg-light rounded mt-3">
+        <div class="col p-0">
+          <div class="row title-box">
+            <div class="title-box-left">
+              <h2>My Fifth Photo</h2>
+            </div>
+            <div class="title-box-right bg-light">
+              <h5 class="text-right ">2/24</h5>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://www.hawaiimagazine.com/sites/default/files/field/image/shepardfairey.jpg"
+              class="img-fluid"
+              alt="Responsive image"
+            />
+          </div>
+          <h5>73 likes</h5>
+          <p>Street art in beautiful hawaii.</p>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <i class="far fa-heart"></i>
+              </div>
+              <div class=" comment col">
+                <h6>Comment...</h6>
+              </div>
+              <div class="object col">
+                <i class="fas fa-ellipsis-v "></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fifth blog picture -->
+      <!-- Sixth blog picture -->
+      <div class="container bg-light rounded mt-3">
+        <div class="col p-0">
+          <div class="row title-box">
+            <div class="title-box-left">
+              <h2>My Sixth Photo</h2>
+            </div>
+            <div class="title-box-right bg-light">
+              <h5 class="text-right ">2/24</h5>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://www.tripsavvy.com/thmb/L3GBuz6L_PT9ywViyWL6XBaZFAA=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAM_7086-49e2aba401eb43e1a87e2ed8bdd5123a.jpg"
+              class="img-fluid"
+              alt="Responsive image"
+            />
+          </div>
+          <h5>23 likes</h5>
+          <p>
+            Some Orea Tahiti! love the historical regalia and Pan Polynesian
+            experience.
+          </p>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <i class="far fa-heart"></i>
+              </div>
+              <div class=" comment col">
+                <h6>Comment...</h6>
+              </div>
+              <div class="object col">
+                <i class="fas fa-ellipsis-v "></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Sixth blog picture -->
+      <!-- Seventh blog picture -->
+      <div class="container bg-light rounded mt-3">
+        <div class="col p-0">
+          <div class="row title-box">
+            <div class="title-box-left">
+              <h2>My Seventh Photo</h2>
+            </div>
+            <div class="title-box-right bg-light">
+              <h5 class="text-right ">2/24</h5>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExMjU4fQ&w=1000&q=80"
+              class="img-fluid"
+              alt="Responsive image"
+            />
+          </div>
+          <h5>90 likes</h5>
+          <p>Nice beach view.</p>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <i class="far fa-heart"></i>
+              </div>
+              <div class=" comment col">
+                <h6>Comment...</h6>
+              </div>
+              <div class="object col">
+                <i class="fas fa-ellipsis-v "></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Seventh blog picture -->
+      <!-- Eighth blog picture -->
+      <div class="container bg-light rounded mt-3">
+        <div class="col p-0">
+          <div class="row title-box">
+            <div class="title-box-left">
+              <h2>My Eighth Photo</h2>
+            </div>
+            <div class="title-box-right bg-light">
+              <h5 class="text-right ">2/24</h5>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://i.pinimg.com/originals/49/35/11/4935113c9f48e845f1c72fc43629c2d7.jpg"
+              class="img-fluid"
+              alt="Responsive image"
+            />
+          </div>
+          <h5>54 likes</h5>
+          <p>Lovely beach of Hawaii, Surfs up!</p>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <i class="far fa-heart"></i>
+              </div>
+              <div class=" comment col">
+                <h6>Comment...</h6>
+              </div>
+              <div class="object col">
+                <i class="fas fa-ellipsis-v "></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Eighth blog picture -->
+      <!-- Ninth blog picture -->
+      <div class="container bg-light rounded mt-3">
+        <div class="col p-0">
+          <div class="row title-box">
+            <div class="title-box-left">
+              <h2>My Ninth Photo</h2>
+            </div>
+            <div class="title-box-right bg-light">
+              <h5 class="text-right ">2/24</h5>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://images.squarespace-cdn.com/content/v1/5ccabcf60b77bdbb3acaf70a/1567942055419-KQKDFQNMZGR1CS1G56UX/ke17ZwdGBToddI8pDm48kFTEgwhRQcX9r3XtU0e50sUUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcW7uEhC96WQdj-SwE5EpM0lAopPba9ZX3O0oeNTVSRxdHAmtcci_6bmVLoSDQq_pb/AAAABRc2jGhO1nPuf_HcX2s595-qmX6dvzzkvJ9WV62pZFhQWvkpEOOFpqbUPlpJ_ge86JKRoalSy9kxXEgRBVugJJluitv4aUnFmA.jpg"
+              class="img-fluid"
+              alt="Responsive image"
+            />
+          </div>
+          <h5>100 likes</h5>
+          <p>
+            Martathoning one of my very favorite shows, hello Naruto Uzumaki.
+          </p>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <i class="far fa-heart"></i>
+              </div>
+              <div class=" comment col">
+                <h6>Comment...</h6>
+              </div>
+              <div class="object col">
+                <i class="fas fa-ellipsis-v "></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Ninth blog picture -->
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
